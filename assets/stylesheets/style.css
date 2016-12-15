@@ -4094,14 +4094,3 @@ input[type="radio"]::before {
   line-height: 1.05;
   text-transform: uppercase;
 }
-
-/* line 38, ../../sass/base/_title.scss */
-.title--m {
-  font-size: 1.125em;
-}
-
-/* line 42, ../../sass/base/_title.scss */
-.title--s {
-  font-size: 0.85em;
-  line-height: 1.15;
-}
