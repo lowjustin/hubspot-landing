@@ -1,0 +1,45 @@
+// # title
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+.title {
+  margin-bottom: 0.5em;
+  font-family: $font-sec;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  small {
+    font-family: $font-pri;
+    font-style: italic;
+    letter-spacing: initial;
+    text-transform: initial;
+  }
+}
+
+.title--xl {
+  margin-bottom: 0.25em;
+  font-size: $font-size--xl;
+  font-weight: 300;
+  letter-spacing: .15em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.title--l {
+  font-size: $font-size--l;
+  font-weight: 300;
+  letter-spacing: .15em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.title--m {
+  font-size: $font-size--m;
+}
+
+.title--s {
+  font-size: $font-size--s;
+  line-height: 1.15;
+}

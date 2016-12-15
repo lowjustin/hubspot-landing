@@ -1,0 +1,317 @@
+// # skeleton
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////
+// # layout
+//////////////////////////////
+@viewport{
+  zoom: 1.0;
+  width: device-width;
+}
+
+@-ms-viewport {
+  zoom: 1.0;
+  width: device-width;
+}
+
+body {
+  font-family: $font-pri;
+  line-height: 1.4;
+  color: $base;
+}
+
+header, nav, article, section, aside, footer {
+  margin-bottom: $gutter * 4;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+hr {
+  margin-top: $gutter * 4;
+  margin-bottom: $gutter * 4;
+  border-top-color: $neutral-3;
+}
+
+//////////////////////////////
+// # title
+//////////////////////////////
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+//////////////////////////////
+// # list
+//////////////////////////////
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul ol, ul ul, ol ol, ol ul {
+  margin-left: $gutter;
+}
+
+ul ol,
+ol ol {
+  list-style-type: lower-roman;
+}
+
+li {
+  margin-bottom: 0.25em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+dl {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+dt {
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $gutter;
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//////////////////////////////
+// # text
+//////////////////////////////
+p {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+sub, sup {
+  position: relative;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+small {
+  font-size: $font-size--s;
+}
+
+mark {
+  font-weight: normal;
+  font-style: normal;
+}
+
+blockquote {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before { content: "\201C"; }
+  &:after  { content: "\201D"; }
+}
+
+pre,
+code {
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+//////////////////////////////
+// # link
+//////////////////////////////
+a {
+  border-bottom: 1px solid $base;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $neutral-2;
+    border-bottom-color: $neutral-2;
+  }
+}
+
+//////////////////////////////
+// # media
+//////////////////////////////
+figure, picture, img {
+  display: block;
+  width: 100%;
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+figcaption {
+  margin-top: -0.25em;
+  margin-right: $gutter;
+  font-size: $font-size--s;
+}
+
+//////////////////////////////
+// # table
+//////////////////////////////
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: $gutter;
+  border-top: 1px solid $base;
+  border-right: 1px solid $base;
+  border-bottom: 1px solid $base;
+  border-left: 1px solid $base;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+caption {
+  margin-bottom: 0.5em;
+  text-align: inherit;
+  font-weight: bold;
+}
+
+th, td {  
+  padding-top: 0.25em;
+  padding-right: 0.5em;
+  padding-bottom: 0.25em;
+  padding-left: 0.5em;
+  border-top: 1px solid $base;
+  border-right: 1px solid $base;
+  border-bottom: 1px solid $base;
+  border-left: 1px solid $base;
+}
+
+//////////////////////////////
+// # form
+//////////////////////////////
+fieldset {
+  margin-bottom: $gutter * 4;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+legend {
+  margin-bottom: $gutter;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+}
+
+textarea, select, input {
+  line-height: 1.4;
+}
+
+textarea, select,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="color"],
+input[type="range"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+  display: block;
+  width: 100%;
+  padding-top: 0.25em;
+  padding-left: 0.5em;
+  padding-bottom: 0.25em;
+  padding-right: 0.5em;
+  border-top: 1px solid $neutral-3;
+  border-right: 1px solid $neutral-3;
+  border-bottom: 1px solid $neutral-3;
+  border-left: 1px solid $neutral-3;
+}
+
+$form_placeholder_prefixes: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', '::input-placeholder', '::placeholder' );
+@each $prefix in $form_placeholder_prefixes {
+  input[placeholder]#{$prefix},
+  textarea[placeholder]#{$prefix} {
+    color: $neutral-2;
+  }
+}
+
+input {
+  &[type="radio"],
+  &[type="checkbox"] {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 1em;
+    height: 1em;
+    padding-top: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
+    border-top: 1px solid $base;
+    border-right: 1px solid $base;
+    border-bottom: 1px solid $base;
+    border-left: 1px solid $base;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:checked {
+      &::before {
+        background: $base;
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+
+  &::before {
+    border-radius: 50%;
+  }
+}

@@ -4,15 +4,24 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////
+// # layout
+//////////////////////////////
+$col-count: 12;
+
+$gutter: 0.75em;
+$gutter--m: 1em;
+$gutter--l: 1.25em;
+
+//////////////////////////////
 // # typography
 //////////////////////////////
-$font-pri: lato, helvetica, arial, sans-serif;
-$font-sec: georgia, "times new roman", times, serif;
+$font-pri: georgia, 'times new roman', times, serif;
+$font-sec: lato, helvetica, arial, sans-serif;
 
 $font-size--s: 0.85em;
 $font-size--m: 1.125em;
-$font-size--l: 1.35em;
-$font-size--xl: 1.55em;
+$font-size--l: 1.5em;
+$font-size--xl: 1.75em;
 
 //////////////////////////////
 // # color swatches
