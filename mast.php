@@ -5,6 +5,6 @@
       <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/logo.svg#facets"></use></svg>
     </span>
   </a>
-  <h1>Multi-product landing page</h1>
+  <h1>Page title</h1>
   <h2>Campaign preamble</h2>
 </div>
