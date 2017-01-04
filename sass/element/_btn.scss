@@ -5,9 +5,9 @@
 
 .btn {
   display: inline-block;
-  padding: $gutter * 2;
+  padding: $gutter * 2 $gutter * 8;
   border: none;
-  border-radius: $gutter;
+  /*border-radius: $gutter;*/
   color: $neutral-2;
   background-color: $neutral-3;
   text-transform: uppercase;
@@ -23,12 +23,29 @@
   }
 }
 
-.btn-primary {
+.btn--primary {
+  padding: $gutter * 2 $gutter * 4;
+  font-size: $font-size--m;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.btn--dark {
   color: $neutral-4;
   background-color: $blue-1;
 
   &:hover {
     color: $neutral-4;
     background-color: $neutral-1;
+  }
+}
+
+.btn--light {
+  color: $blue-1;
+  background-color: $blue-2;
+
+  &:hover {
+    color: $blue-1;
+    background-color: $neutral-3;
   }
 }

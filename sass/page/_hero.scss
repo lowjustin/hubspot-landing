@@ -4,18 +4,28 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .hero {
-  margin-bottom: $gutter * 4;
+  background-color: $blue-1;
   text-align: center;
+
+  .hero-info {
+    padding: $gutter * 2;
+    color: $white;
+
+    .btn {
+      margin-bottom: $gutter * 2;
+    }
+  }
 
   h1 {
     font-size: $font-size--xl;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     font-family: $font-sec;
     font-weight: 300;
   }
 
   h2 {
+    margin-bottom: $gutter * 2;
     font-size: $font-size--l;
     font-family: $font-pri;
     font-style: italic;

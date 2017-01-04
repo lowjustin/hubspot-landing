@@ -30,7 +30,7 @@
       margin-bottom: $gutter * 2;
       font-size: $font-size--l;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
       font-family: $font-sec;
       font-weight: 300;
     }
@@ -64,4 +64,9 @@
       font-size: $font-size--s;
     }
   }
+}
+
+.campaign--dark {
+  background-color: $blue-1;
+  color: $white;
 }

@@ -42,14 +42,14 @@
 
   <div class="container-fluid section campaign">
     <div class="row">
-      <div class="sub-section campaign-info col-md-8">
+      <div class="sub-section campaign-info col-md-6">
         <h1>Description about the campaign</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at dictum ante. Morbi nulla nunc, luctus nec urna at, tincidunt tristique ligula. Vestibulum efficitur purus ut varius accumsan. Fusce nec nisi eu nisi fringilla vestibulum eget eget dolor. Etiam scelerisque orci neque, at ultricies ex commodo ut.</p>
         <p>Donec mollis, libero nec pharetra aliquet, metus metus auctor arcu, eu dictum velit ipsum id arcu. Pellentesque dignissim est in metus efficitur pretium. Suspendisse potenti. Sed convallis risus felis, nec consectetur nunc imperdiet non.</p>
         <p>Praesent consequat neque turpis, a vestibulum massa bibendum nec. In iaculis augue sem, eget fermentum dui tincidunt ac. In finibus turpis nec lectus tincidunt semper. Aliquam ut tempus massa. Aliquam convallis turpis et tellus dapibus interdum.</p>
       </div>
 
-      <div class="sub-section campaign-terms col-md-4">
+      <div class="sub-section campaign-terms col-md-5 col-md-offset-1">
         <h1>Terms and conditions</h1>
         <ul>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -63,7 +63,7 @@
     </div>
 
     <div class="campaign-cta">
-      <a class="btn btn-primary" href="#0">Campaign-wide HubSpot button</a>
+      <a class="btn btn--primary btn--dark" href="#0">Campaign-wide HubSpot button</a>
     </div>
   </div>
 </main>
