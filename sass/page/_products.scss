@@ -1,0 +1,29 @@
+// # products
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.products {
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter * 2;
+
+  h1 {
+    font-size: $font-size--m;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $font-sec;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: $font-size--m;
+    font-family: $font-pri;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .product-info {
+    margin-top: $gutter * 2;
+    text-align: center;
+  }
+}

@@ -2,11 +2,11 @@
 <? include 'mast.php' ?>
 
 <main class="main">
-  <div class="section campaign-hero">
-    <div class="sub-section campaign-hero__banner">
+  <div class="section hero">
+    <div class="sub-section hero-image">
       <img src="https://facetsingapore.com/thumbs/content__highlight-wholesale-a4cd4f3602574a75aa66d5cbe8275b52.jpg" alt="">
     </div>
-    <div class="sub-section campaign-hero__description">
+    <div class="sub-section hero-info">
       <h1>Hero title</h1>
       <h2>Caption</h2>
       <a class="btn btn-primary" href="#0">HubSpot button</a>
@@ -14,14 +14,14 @@
   </div>  
 
   <div class="container-fluid">
-    <div class="section campaign-info row">
-      <div class="sub-section campaign-info__description col-md-8">
+    <div class="section campaign row">
+      <div class="sub-section campaign-info col-md-8">
         <h1>Description about the campaign</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at dictum ante. Morbi nulla nunc, luctus nec urna at, tincidunt tristique ligula. Vestibulum efficitur purus ut varius accumsan. Fusce nec nisi eu nisi fringilla vestibulum eget eget dolor. Etiam scelerisque orci neque, at ultricies ex commodo ut.</p>
         <p>Donec mollis, libero nec pharetra aliquet, metus metus auctor arcu, eu dictum velit ipsum id arcu. Pellentesque dignissim est in metus efficitur pretium. Suspendisse potenti. Sed convallis risus felis, nec consectetur nunc imperdiet non.</p>
         <p>Praesent consequat neque turpis, a vestibulum massa bibendum nec. In iaculis augue sem, eget fermentum dui tincidunt ac. In finibus turpis nec lectus tincidunt semper. Aliquam ut tempus massa. Aliquam convallis turpis et tellus dapibus interdum.</p>
       </div>
-      <div class="sub-section campaign-info__terms col-md-4">
+      <div class="sub-section campaign-terms col-md-4">
         <h1>Terms and conditions</h1>
         <ul>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>

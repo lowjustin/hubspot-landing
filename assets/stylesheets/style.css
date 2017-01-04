@@ -2408,93 +2408,121 @@ input[type="radio"]::before {
   font-weight: 400;
 }
 
-/* line 6, ../../sass/page/_campaign.scss */
-.campaign-hero {
-  /*margin-top: $gutter * 2;*/
+/* line 6, ../../sass/composition/_campaign.scss */
+.campaign {
+  padding: 1.5em;
+  background-color: #f8f8f8;
+}
+@media (min-width: 992px) {
+  /* line 6, ../../sass/composition/_campaign.scss */
+  .campaign {
+    padding: 3em;
+  }
+}
+/* line 14, ../../sass/composition/_campaign.scss */
+.campaign .campaign-cta {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  /* line 14, ../../sass/composition/_campaign.scss */
+  .campaign .campaign-cta {
+    margin-top: 3em;
+  }
+}
+/* line 22, ../../sass/composition/_campaign.scss */
+.campaign .campaign-info {
+  margin-bottom: 3em;
+}
+@media (min-width: 992px) {
+  /* line 22, ../../sass/composition/_campaign.scss */
+  .campaign .campaign-info {
+    margin-bottom: 0;
+  }
+}
+/* line 29, ../../sass/composition/_campaign.scss */
+.campaign .campaign-info h1 {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: lato, helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+/* line 38, ../../sass/composition/_campaign.scss */
+.campaign .campaign-info p {
+  font-size: 1.125em;
+}
+/* line 43, ../../sass/composition/_campaign.scss */
+.campaign .campaign-terms {
+  margin-bottom: 1.5em;
+}
+@media (min-width: 992px) {
+  /* line 43, ../../sass/composition/_campaign.scss */
+  .campaign .campaign-terms {
+    margin-bottom: 0;
+  }
+}
+/* line 50, ../../sass/composition/_campaign.scss */
+.campaign .campaign-terms h1 {
+  margin-bottom: 1.5em;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: lato, helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+/* line 59, ../../sass/composition/_campaign.scss */
+.campaign .campaign-terms ul {
+  list-style-position: outside;
+}
+/* line 63, ../../sass/composition/_campaign.scss */
+.campaign .campaign-terms p, .campaign .campaign-terms li {
+  font-size: 0.85em;
+}
+
+/* line 6, ../../sass/page/_hero.scss */
+.hero {
   margin-bottom: 3em;
   text-align: center;
-  /*&::after {
-    content: "\2014";
-    display: block;
-    margin-top: $gutter * 2;
-    color: $neutral-2;
-  }*/
 }
-/* line 11, ../../sass/page/_campaign.scss */
-.campaign-hero h1 {
+/* line 10, ../../sass/page/_hero.scss */
+.hero h1 {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: lato, helvetica, arial, sans-serif;
   font-weight: 300;
 }
-/* line 19, ../../sass/page/_campaign.scss */
-.campaign-hero h2 {
-  /*margin-bottom: $gutter * 4;*/
+/* line 18, ../../sass/page/_hero.scss */
+.hero h2 {
   font-size: 1.5em;
   font-family: georgia, "times new roman", times, serif;
   font-style: italic;
   font-weight: 400;
 }
 
-/* line 35, ../../sass/page/_campaign.scss */
-.campaign-info {
-  padding: 1.5em;
-  background-color: #f8f8f8;
-}
-@media (min-width: 992px) {
-  /* line 35, ../../sass/page/_campaign.scss */
-  .campaign-info {
-    padding: 3em;
-  }
-}
-/* line 43, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__description {
-  margin-bottom: 3em;
-}
-@media (min-width: 992px) {
-  /* line 43, ../../sass/page/_campaign.scss */
-  .campaign-info .campaign-info__description {
-    margin-bottom: 0;
-  }
-}
-/* line 50, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__description h1 {
-  margin-bottom: 1.5em;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: lato, helvetica, arial, sans-serif;
-  font-weight: 300;
-}
-/* line 59, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__description p {
-  font-size: 1.125em;
-}
-/* line 64, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__terms {
+/* line 6, ../../sass/page/_products.scss */
+.products {
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-@media (min-width: 992px) {
-  /* line 64, ../../sass/page/_campaign.scss */
-  .campaign-info .campaign-info__terms {
-    margin-bottom: 0;
-  }
-}
-/* line 71, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__terms h1 {
-  margin-bottom: 1.5em;
+/* line 10, ../../sass/page/_products.scss */
+.products h1 {
   font-size: 1.125em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: lato, helvetica, arial, sans-serif;
   font-weight: 300;
 }
-/* line 80, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__terms ul {
-  list-style-position: outside;
+/* line 18, ../../sass/page/_products.scss */
+.products h2 {
+  font-size: 1.125em;
+  font-family: georgia, "times new roman", times, serif;
+  font-style: italic;
+  font-weight: 400;
 }
-/* line 84, ../../sass/page/_campaign.scss */
-.campaign-info .campaign-info__terms p, .campaign-info .campaign-info__terms li {
-  font-size: 0.85em;
+/* line 25, ../../sass/page/_products.scss */
+.products .product-info {
+  margin-top: 1.5em;
+  text-align: center;
 }
