@@ -1,0 +1,88 @@
+// # campaign
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.campaign-hero {
+  /*margin-top: $gutter * 2;*/
+  margin-bottom: $gutter * 4;
+  text-align: center;
+
+  h1 {
+    font-size: $font-size--xl;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $font-sec;
+    font-weight: 300;
+  }
+
+  h2 {
+    /*margin-bottom: $gutter * 4;*/
+    font-size: $font-size--l;
+    font-family: $font-pri;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  /*&::after {
+    content: "\2014";
+    display: block;
+    margin-top: $gutter * 2;
+    color: $neutral-2;
+  }*/
+}
+
+.campaign-info {
+  padding: $gutter * 2;
+  background-color: $neutral-4;
+
+  @media (min-width: $screen-md-min) {
+    padding: $gutter * 4;
+  }
+
+  .campaign-info__description{
+    margin-bottom: $gutter * 4;
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      margin-bottom: $gutter * 2;
+      font-size: $font-size--l;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: $font-sec;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: $font-size--m;
+    }
+  }
+
+  .campaign-info__terms {
+    margin-bottom: $gutter * 2;
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      margin-bottom: $gutter * 2;
+      font-size: $font-size--m;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: $font-sec;
+      font-weight: 300;
+    }
+
+    ul {
+      list-style-position: outside;
+    }
+
+    p, li {
+      font-size: $font-size--s;
+    }
+  }
+}

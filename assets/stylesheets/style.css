@@ -2319,19 +2319,22 @@ input[type="radio"]::before {
   text-transform: uppercase;
   font-size: 0.85em;
   font-family: lato, helvetica, arial, sans-serif;
+  -webkit-transition: background-color .2s;
+  /* Safari */
+  transition: background-color .2s;
 }
-/* line 17, ../../sass/element/_btn.scss */
+/* line 20, ../../sass/element/_btn.scss */
 .btn:hover {
   background-color: #f8f8f8;
   text-decoration: none;
 }
 
-/* line 23, ../../sass/element/_btn.scss */
+/* line 26, ../../sass/element/_btn.scss */
 .btn-primary {
   color: #f8f8f8;
   background-color: #163876;
 }
-/* line 27, ../../sass/element/_btn.scss */
+/* line 30, ../../sass/element/_btn.scss */
 .btn-primary:hover {
   color: #f8f8f8;
   background-color: #333333;
@@ -2350,7 +2353,7 @@ input[type="radio"]::before {
 /* line 6, ../../sass/component/_mast.scss */
 .mast {
   margin-top: 3em;
-  margin-bottom: 3em;
+  /*margin-bottom: $gutter * 4;*/
   border-bottom: solid 1px #e1e1e1;
   text-align: center;
 }
@@ -2382,7 +2385,7 @@ input[type="radio"]::before {
 
 /* line 6, ../../sass/component/_base.scss */
 .base {
-  margin-top: 3em;
+  /*margin-top: $gutter * 4;*/
   margin-bottom: 3em;
   border-top: solid 1px #e1e1e1;
   text-align: center;
@@ -2405,23 +2408,93 @@ input[type="radio"]::before {
   font-weight: 400;
 }
 
-/* line 6, ../../sass/composition/_campaign-hero.scss */
-.campaign-hero__description {
+/* line 6, ../../sass/page/_campaign.scss */
+.campaign-hero {
+  /*margin-top: $gutter * 2;*/
+  margin-bottom: 3em;
   text-align: center;
+  /*&::after {
+    content: "\2014";
+    display: block;
+    margin-top: $gutter * 2;
+    color: $neutral-2;
+  }*/
 }
-/* line 9, ../../sass/composition/_campaign-hero.scss */
-.campaign-hero__description h1 {
+/* line 11, ../../sass/page/_campaign.scss */
+.campaign-hero h1 {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: lato, helvetica, arial, sans-serif;
   font-weight: 300;
 }
-/* line 17, ../../sass/composition/_campaign-hero.scss */
-.campaign-hero__description h2 {
-  margin-bottom: 1.5em;
+/* line 19, ../../sass/page/_campaign.scss */
+.campaign-hero h2 {
+  /*margin-bottom: $gutter * 4;*/
   font-size: 1.5em;
   font-family: georgia, "times new roman", times, serif;
   font-style: italic;
   font-weight: 400;
+}
+
+/* line 35, ../../sass/page/_campaign.scss */
+.campaign-info {
+  padding: 1.5em;
+  background-color: #f8f8f8;
+}
+@media (min-width: 992px) {
+  /* line 35, ../../sass/page/_campaign.scss */
+  .campaign-info {
+    padding: 3em;
+  }
+}
+/* line 43, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__description {
+  margin-bottom: 3em;
+}
+@media (min-width: 992px) {
+  /* line 43, ../../sass/page/_campaign.scss */
+  .campaign-info .campaign-info__description {
+    margin-bottom: 0;
+  }
+}
+/* line 50, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__description h1 {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: lato, helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+/* line 59, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__description p {
+  font-size: 1.125em;
+}
+/* line 64, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__terms {
+  margin-bottom: 1.5em;
+}
+@media (min-width: 992px) {
+  /* line 64, ../../sass/page/_campaign.scss */
+  .campaign-info .campaign-info__terms {
+    margin-bottom: 0;
+  }
+}
+/* line 71, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__terms h1 {
+  margin-bottom: 1.5em;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: lato, helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+/* line 80, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__terms ul {
+  list-style-position: outside;
+}
+/* line 84, ../../sass/page/_campaign.scss */
+.campaign-info .campaign-info__terms p, .campaign-info .campaign-info__terms li {
+  font-size: 0.85em;
 }
